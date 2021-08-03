@@ -6,11 +6,15 @@
  * Equipe: Eliton Lima e Guilherme Girão Alves
  */
 
+#include <iostream>
 #include <fstream>
-#include "Matriz.h"
 
 #ifndef UTILITARIOS_H
 #define UTILITARIOS_H
+
+#include "Matriz.h"
+
+using namespace std;
 
 class Utilitarios {
   public:
@@ -126,6 +130,8 @@ Matriz *Utilitarios::lerMatrizDeArquivo(string nome_do_arquivo) {
       fileLine++; // Incrementa a linha que está sendo lida do arquivo atualmente
     }
   }
+
+  file.close(); // Fecha o arquivo
 
   assert(m != nullptr);
   return m;
