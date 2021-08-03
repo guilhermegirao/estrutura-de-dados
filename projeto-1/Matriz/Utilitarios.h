@@ -119,6 +119,7 @@ Matriz *Utilitarios::lerMatrizDeArquivo(string nome_do_arquivo) {
       } else {
         ss >> linha >> coluna >> valor;
 
+        // A própria função insert já tem a validação do valor ser diferente de 0
         m->insert(linha, coluna, valor);
       }
 
@@ -126,6 +127,7 @@ Matriz *Utilitarios::lerMatrizDeArquivo(string nome_do_arquivo) {
     }
   }
 
+  assert(m != nullptr);
   return m;
 }
 

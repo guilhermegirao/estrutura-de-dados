@@ -19,7 +19,7 @@ Detalhes e instruções sobre o projeto em questão estão no arquivo Instruçõ
 
 - [x] Funções da Classe Matriz
 - [x] Funções fora da Classe Matriz (na Classe Utiliários)
-- [ ] Main Interativa
+- [x] Main Interativa
 
 ## Agradecimentos:
 
