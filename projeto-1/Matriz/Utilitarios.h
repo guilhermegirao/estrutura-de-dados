@@ -76,7 +76,7 @@ Matriz *Utilitarios::multiplica(Matriz *A, Matriz *B) {
     for (int j = 1; j <= colunas; j++) {
       int mult = 0;
 
-      // Percorre as linhas do vetor A (usado na fórmula para multiplicação de matrizes)
+      // Percorre as linhas da Matriz A (somatório das multiplicações)
       for (int k = 1; k <= linhas; k++) {
         int valA = A->getValue(i, k); // Pega o valor da Matriz A em (i, k)
         int valB = B->getValue(k, j); // Pega o valor da Matriz B em (k, j)
@@ -95,7 +95,7 @@ Matriz *Utilitarios::lerMatrizDeArquivo(string nome_do_arquivo) {
   // Matriz que será retornada, caso o arquivo existir, senão, retornar um nullptr para retorno de erro
   Matriz *m = nullptr;
 
-  ifstream file("Arquivos/" + nome_do_arquivo); // Lê o arquivo passado por parâmetro (que está na pasta arquivo)
+  ifstream file(nome_do_arquivo); // Lê o arquivo passado por parâmetro
   int fileLine = 0; // Linha que está sendo lida do arquivo atualmente
 
   // Testa se o arquivo foi lido com sucesso
