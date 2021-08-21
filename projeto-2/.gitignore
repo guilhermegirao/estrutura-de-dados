@@ -1,0 +1,5 @@
+*.exe
+*.gch
+*.o
+*.out
+output.txt
